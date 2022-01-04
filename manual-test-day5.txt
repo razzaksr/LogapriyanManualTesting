@@ -1,0 +1,163 @@
+day 5:
+
+Tester: 
+
+smoke >> should happen first after every build(app/.war/.jar) has generated from developer
+
+System test: functional, non funtional
+
+Sanitary test:
+
+
+Test design techniques:
+design/ find best test case which satisfies requirement also reduce no of test case
+
+techquies:
+1. Equivalanace Class Partitioning:
+	a. age >= 18 : wight>> 	18,19,20,21................
+	kid
+		17		>> invalid/ fail
+		18 - 20	>> 19	>> valid/ pass
+		21 - 50	>> 30	>> valid/ pass
+		51 - 70 >> 60	>> valid/ pass
+		61 		>> invalid/ fail
+
+	b. weight: numeric 
+		40 - 65		>> valid
+		sixty five	>> in valid
+
+2. Boundry Value Analysis: BVA >>
+min: min+1, min-1
+max: max+1, max-1
+
+	weight: numeric 
+		40 - 65		>> 40 >> valid
+		41		>> 41 >> valid
+		39		>> 39 >> invalid
+
+		65		>> valid
+		66		>> invalid
+		64		>> valid
+
+3. Decision table based: process/ functionality: cause and effect
+	a.
+	cond1			tc1(37)		tc2(14)		tc3(11)	tc4(dbc)
+	prime			ok		not ok		ok	failed
+	action1:prime		execute				execute
+	action2:not prime			execute			failed
+	
+	b. fund transfer via GPAY:		tc1	tc2	tc3	tc4
+	condition1	google pin		ok	ok	not	ok
+	condition2	upi pin			ok	not	not	ok
+	condition3	accbal 			ok	not	not	not
+			send amount 
+			mismatch
+	action1		fund transferred	exe
+	action2		insufficient					exe
+	action3		upi invalid			exe
+	action3		google pin invalid			exe
+
+4. State transition: changes in inputs leads multiple pages(state)
+	a.
+	state		pin validation		+case		-case
+	s1		first attempt		s4		s2
+	s2		second attempt		s4		s3
+	s3		third attempt		s4		s5
+	s4		home
+	s5		block
+
+5. Error Guessing: prior exp/knowledge on app to find bugs
+	eg:
+		sign up in facebook:
+			a. submit without entering mandate fields
+			b. mismatch format inputs
+
+SDLC >> so called design(uml,use case,activity) to deploy life cycle
+STLC >> testing life cycle: Analysis, test plan, test case development, environment setup, execution, closure
+
+use case: designing in form of diagram which illustrate requirement by BusinessAnalyst
+	Actor/ User
+	Action/ Process
+	Re-Action/ Outcome	
+
+test case: design of test procedure(step by step how to test) by test engineers
+	test inputs, expected result,actual result
+
+test scenario: module where perform test(what going to be tested)
+	eg: sign up, submission, read, report email,fund transfer
+
+
+
+	
+
+Responsibilities:
+Analysis: QA/ Project Manager/ BA
+	input: audio, video, text
+	output: SRS
+test plan: Team lead(80), Manger (20)
+	input: SRS, functionality(FRS)
+	output: Test plan document, 
+   activities:		
+	scope>> include,exclude, environment
+	review
+	strategy, defect procedure, roles, schedule, outcome, pricing, criterias(input/output), abort(suspension)-recovery(resumption), tools, risk, approvals
+
+test case design: lead(20), engineers(80)
+	input: test plan document,SRS, designs
+	output: test case document, traceable matrix(fun id,test case id, action)
+	
+   activities:
+	test suite: list of test cases for respective scenario
+	scenarios: signup,login,forget password	
+	prepare case: smoke case, +case, -case
+	review
+	traceable matrix:
+	approval
+   test case document template:
+	test case id, title, description, pre-condition 
+	priority: p0(smoke),p1(regression),p2(func),p3(re test/ non functional)
+	requirement id
+	Actions/Step
+	Expected
+	Actual
+	test data
+   traceable matrix(fun id,test case id, action):RTM
+	Mapping of req and test
+	req id, req des, test case id
+	eg: Gpay fund transfer
+	req id 		des		tc id		status
+	78		account maped	tc 01,100..	01-pass,100-fail
+	120		receipient info	80,95,110	80-pass,95-fail,110-fail
+
+environment setup: Test Bed>> execution run over this system
+	resembleness of client system(requires soft,hardware)
+	build run on this env
+	
+
+execution: QC-QE(90-95), lead(5-10)
+	input: test plan, test case doc, build(developer)
+	output: test reports/log
+	developer - QA -test
+   activities:
+	executing all test cases in test case doc
+		status: marked,passed,failed,block,run,other
+	prepare test log/report to QA/PM
+		failed bugs
+	identify bug/defect:assigned bug id
+		tools: DevTrack, Jira, Quality center, Bug jilla
+	re test: once bug fixed
+	track on defect will be happen untill approval
+report: QE(test script-automation),QC(80-90),lead(10-20)
+	input: test log
+	output: test/defect report
+   activities:
+	defect report >> Developer
+		
+	
+closure: manager/lead(70-80), engineers(20-30)
+	input:test report,defect report
+	output: Test Summary
+
+   activities:
+	analyse reports: test report, bug report, outcome criteria
+

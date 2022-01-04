@@ -1,0 +1,160 @@
+day 6:
+Bug/ defect report:
+
+a. defect id
+b. description>> about which function/ module
+c. version>> build version
+d. Steps: screenshort
+e. date of raised
+f. reference>> srs,uml,screen short...
+g. detect by whom>> tester id/ name
+h. status>> stage where bug is
+i. fixed by>> developer id
+j. date of closed
+k. severity>> impact on application
+	block>> stops the total application/site to proceed
+		eg: network domain name/ welcome page site
+	Critical>> application can be run but important functionality wouldn't 			work
+		eg: in e-commerce placing an order is not working
+	Major>> site/ functionality is working but depended one / reposnse 		wouldn't get
+		eg:
+			tracking id couldn't get after submission of ITR
+	Minor>> Functionality/ site wouldn't halt
+		eg: ITR >> submit button size small 
+
+l. priority>> how much important/ soon should be to fix
+	p0>> high>> it has to be addressed by devloper
+	p1>> medium>> it can get respond til new build get generated
+	p2>> low>> it can be fixed after one or more build releases
+	
+	eg:
+	severity			priority
+					p0			p1
+	critical/blocker	blank link of welcome site	Wishlist isn't
+	Minor			MyOrders>> last 2 orders	Toast not show
+								after added to
+								kart
+
+Resolving an defects: Developer - DevManager - TestManager - Tester
+	using status
+		Accept
+		Reject
+		Duplicate
+		Enhancement
+		Less information
+		Fixed
+		As Designed
+
+STLC: Test Closure:
+	when to close: Time, Coverage, Cost, Software, Critical BO, Quality
+	prepare test metrics
+	learn document: test report, bug report>> severity, priority
+	prepare test summary
+	
+	Outcome: Test Summary, metrics
+
+Test Metrics:
+	No of Req
+	avg no of test cases per requirement
+	total test cases for all req
+      (%)total test case executed>> (total execution/ total testcase desiged)*100
+      (%)no of not executed	>> (no of test not exe/total case designed)*100
+      (%)no of passed		>> (no of passed/total executed)*100
+      (%)no of failed		>> (no of failed/total exe)*100
+      (%)no of block		>> (no of blocked/total exe)*100
+	no of un exhausted
+	total defect identified
+	no of critical defect
+	no of major defect
+	no of minor defect
+	customer defect
+	no of defect @ Acceptance
+
+Principles of testing:
+	1.start test at early stage(SRS review,teset plan)
+	2.to find bug/defect
+	3.rare case 100% bug free
+	4.no exhaustive>> no same test case
+	5.context based test>> application type:web,mobile,desktop
+	6.update test cases
+	7.percentage no of defects @ module which shouldn't cause more than 70% of application defect
+
+
+Total recap:
+requirement, functionality
+test scenarios
+design test case
+environment setup
+execution
+log/ report
+defect report
+bug cycle
+regular reviews/ meetings
+QE>> automation scripts
+recommondation for production or not
+
+
+1. Project : ForumBuddy
+	Knowledge>> information>> app
+		front end: html, bootstrap, thymeleaf
+		back end: spring boot
+		orm	: hibernate
+		database: MySQL
+		Unit	: JUnit, Mockito
+	explore functionality>> SRS, FRD
+		FRD:
+			Functionality description marked with important scenario
+			a. use case, mock screens
+			req id can be added if need
+			
+			Login: scenarios: login, forget, new signup
+			Home
+			Adding New Forum
+			Listing All Forum
+			Edit Forum Details
+			Delete Forum
+			Logout
+			
+	Test plan:SRS, FRD, Designs
+		scopes: include: login, logout, view all, menu options, footer
+			exclude: ignore besides includes, third party 				apps, atomation scripts
+			environment: hardware,software
+				eg: apache tomcat, 4gb ram
+		strategies: test techniques
+		process/guidlines: 
+			smoke
+			if smoke failed, reject the build
+			if stable build >> smoke, retest
+			time elapsation less if multiple resources
+			bug tracking tool
+			part / important test: smoke/sanitary,re,regression,usability,UI
+		
+			Context based testing: app,webapp
+			Shift left: start test from beginning
+			exploratory test: exp 
+			end to end test
+		Roles:Name/Id of person, role, contribution
+		schedule: 
+			test plan		start-end
+			test case design	start-end
+			test execution		start-end
+			report sub		submit date
+		outcome:
+			Item		information	target date
+			test plan   	scopes,env,.	date
+			test case			date
+			defect report			NA
+			summary				date
+		pricing:tools,man power resources
+		Entry/Exit criterias
+		suspension& resumption
+	Scenarios to test
+	Design test case & review	
+
+Build from developer:
+	environment setup
+	execution
+	bug report & track:
+	sanitary, retest, regression
+	test report
+	test sign off	

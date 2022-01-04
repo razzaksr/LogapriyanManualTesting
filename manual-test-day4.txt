@@ -1,0 +1,114 @@
+day - 4:
+
+System testing: QC, QE - actual tester
+
+QC - Black box testing:
+	UI: User interface >> GUI>> 
+		scales and size
+		boundries of components
+		componenets events
+		colors, font
+		images
+		..........
+
+	functionality: based on SRS
+		Object related attributes/properties testing
+		database testing: 
+			Create Read Update Delete List
+			Data manipulation language
+			
+			column/ field data 
+			length
+			type
+			triggers
+			function, indicies
+			
+		Error testing:
+			giving an proper message and another chance
+		ALU/ Calculation/ Manipulation testing:
+			
+		Link Existance/ execution: internal, external, broken
+		Cookies and sessions:
+			
+
+	Non functional: load, power
+		performance:
+			load: gradually(one by one) increase sessions
+			stress: sudden increse of sessions
+			volume: transactions of data and operations
+		Security:
+			authentication: login faild/success
+			authorisation: logged users features enabled/disabled
+		Recovery:
+			abnormal to normal
+		Compatability:
+			forward compatability
+			backward compatability
+			hardware compatability
+		installation:
+			installation wizard
+			uninstall
+		sanitation/ garbage
+			extra feature / bug
+
+
+	Usability: expectation
+		support of troubleshooting @ client side
+
+Regression Test:
+	test bug module and integrated module 
+	unit:
+		bug module
+	regional:
+		integrated modules with bug module
+	full:
+		when more multiple bug modules then perform
+		full regression test
+ReTest:
+	between builds to check whether bug of early build has sorted out in current build
+
+smoke test:
+	when stable build gets satisfies basic testing we allow them for system, regression and re test
+	
+sanitery test:
+	stable
+	regression part
+
+Exploratory test:
+	application build even though srs not available
+	prepare document by testers
+	complete understand>> optional
+	
+	time consumption
+	misunderstand
+
+adhoc testing:
+	application build even though srs not available	
+	complete understand
+	unplanned
+	application crash/ break
+	eg:
+		instagram
+
+Monkey/ Gorilla testing:
+	without SRS/ test case
+	without application knowledge
+	eg:
+		games, sites
+
+Positive test:
+	correct test case which performes on the module in order to pass
+	
+	password: alpha,number,spl
+
+Negative test:
+	wrong test case which performes on the module in order to fail
+	
+	password: 
+
+end to end test:
+	all modules from login to logout
+
+Acceptance testing: client/ end user
+	alpha>> visiting on company to test
+	beta >> client environment

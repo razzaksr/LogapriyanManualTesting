@@ -1,0 +1,67 @@
+day 3:
+
+Review:
+single person/ two
+documents: corrections and complete
+
+CRS
+SRS
+HLD,LLD
+Code
+test plan/ cases
+
+Walkthrough:
+random time/ unscheduled
+creator discuss with peer's
+
+Inspection:
+formal meeting
+3 people (presentor/reader, observer/writer, moderator/ host)
+formal email notification
+
+QA: Quality Assurance: Project Manager
+ensure building an quality product by coordinating SDLC process
+defects: verification
+
+QC: Quality Controller: Actual testing
+ensure quality testing is happening @ testing phase
+	manual tester: coding is not mandate
+	automation tester: coding is mandate since using tools(selenium, junit..)
+
+QE: Quality Engineering: automation tester
+SoftE: coding develop
+SystE: debug
+QE:    test via code
+
+
+Validation Part: Dynamic testing
+Level of testings:
+
+white box test level: developer
+Unit test:
+each modules of application
+
+goals:
+visiting every line of code>> basis path testing
+flow of modules>> Control,loop structure testing
+test case(inputs)>>Mutation testing
+
+Integration test: white box: developer
+2 or multiple units/ modules
+
+strategies:
+incremental	: 
+top down
+bottom up
+
+non incremental	:
+integrate and test all the modules at same time
+
+
+
+
+black box test level: tester - QC,QE
+System test:
+
+
+Acceptance test: PM/Client/Customer

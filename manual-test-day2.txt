@@ -1,0 +1,68 @@
+Software Development Life Cycle: plan
+requirement, design, develop, test, maintanance
+Development to Delivery
+
+1. water fall: project/app
+
+req.ana: SRS
+	design: UML Use case, class>> Rational rose>> blueprint
+		develop: Code>> .jar(java desk app), .exe(dotnet desk app), .war(web app)
+			test: fun,black,white box,integeration,.... 
+			test-report, test-cases
+				maintanance: user guide/ manual
+
+1. quality
+2. minimal bugs sice req changes not allowed in between
+3. less expensive since testers are used at their own phase
+4. small app, constant or un changes able requirements
+
+drawbacks:
+1. customer friendly>> req changes not allowed often
+2. once defect happened any phase it'll reflects all the sequence phases
+3. expensive when long term/ high efficient app due to we redo all
+
+
+
+2. Spiral:product app
+Iterative>> repeat
+overcome drawbacks on waterfall
+modules dependencies
+every version has : analysis, design,code,test
+version control model
+
+adv:
+versions of app: customer friendly
+prgressive: modules, features added
+requirement changes allowed end of each cycle/version
+
+draw:
+changes in requirement has to be done after validation of each version/cycle
+similar to waterfall since changes allowed at the end>> each cycle is waterfall
+defect continuing since we are not test SRS and design
+
+3. Verification Validation- Model
+Static test: not actual test>> verification
+review
+inspect
+
+Dynamic test: actual test>> validation
+Unit, Integration, System, Acceptance
+
+adv:
+defects minimized by performing static tests
+depends on each phase documents(SRS, HLD,LLD)
+validation for better quality
+
+
+draw:
+customer interaction less
+communication between team
+since documents are focused time elapsation is high
+
+
+Expectation: Agile
+Consistancy
+Communication: team, customer
+Less time
+Budget
+

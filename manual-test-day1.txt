@@ -1,0 +1,58 @@
+Software:
+
+Customer experience:
+
+to automate hardware/ process
+
+Hardware automation/ interface:
+embedded
+java phones>> bada, symbions
+OS>> kernal>> Android, Windows, iOS
+XEROX
+.
+.
+
+C, Python, C++ , Assembly
+
+Process/ Application software:
+eg:
+editors, media players, social, apps, erp, e-commerce
+
+Java, C#, Python, Javascript
+
+Desktop app: PC/Laptop
+eg:
+chrome, ms word, photoshop
+Web App: websites
+eg:
+irctc,gmail,passportseva, flipkart, amazon,.........
+
+Testing:
+Development to Delivery
+
+Unit testing: developer>> JUnit, Mockito, ,......
+	test case
+
+Integeration testing:
+Functional testing:
+System testing:
+Acceptance testing:
+
+Manual testing:
+
+testing:
+requirements:
+ensure quality: less bug,  time line(weeks), budget, expectations, maintainable
+
+
+methodolgies
+tools: jira,...
+
+Automation Testing: programming knowledge
+Selenium: java, python, javascript
+Cucumber
+
+
+error	: developer, tester 
+bug	: not meeting requirements>> communication(scrum), complexity, dev errors, changing requirements often, lack of competency
+failure	: client
