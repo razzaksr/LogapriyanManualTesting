@@ -1,0 +1,95 @@
+Agile:
+iterative and incremental
+
+principles:
+customer experience: no need to wait long
+every sprint/ iterative build will release
+accept changes in the requirement at any point
+
+Advantages:
+
+since we collaborate BA, Dev,QA together, lack comminucation is less
+
+Owner>> Project manager
+Master>> scrum master
+Developer
+QA
+
+timeline is in weeks
+fast delivery with quality product
+
+no documentation>> drawback
+
+
+SCRUM framework:
+build an software with consideration of agile principles/ methodology
+
+5-10 people
+
+Owner>> Project manager
+Master>> scrum master
+Developer
+QA
+
+Product/Project Manager/Owner/ BA:
+	features and requirement of the software
+	priority over features considering market values/ demand
+	decision maker>> accept/reject
+
+Scrum Master:
+	neither developer nor tester even not like management people
+	facilitate the agile process
+
+Developer and tester:
+
+
+SCRUM terminologies/ process:
+
+User stories: a feature/ module of the software
+eg: track orders, change delivery address, pay advance using card, need help
+by Product owner
+
+Epic : Module>> collection of user stories of specific module
+eg: track orders, change delivery address, pay advance using card, need help all are comes under MyOrders EPIC
+by owner
+
+Project/Product/Backlog: list of epics, user stories and priority
+by owner
+
+Sprint plan meeting: can be delivered by the sprint and duration will set
+by scrum master,ba,dev,qa
+
+epic, story id, title, story description, story points, allocated sprint
+
+Sprint/ Iteration/ Team of specific process execution: to complete user story in period of time(2 - 4 weeks)
+
+Sprint backlog: list of committed user stories by the sprint
+
+Scrum meeting: everyday 15 min >> Scrum call by master
+	what did the team done yesterday
+	what the team gonna do today
+	possibilities of impediments/ troubles
+
+Sprint retrospective meeting: feedback, experience of team that will help to improve next sprint
+by master including owner, dev,qa
+
+Story point(hours/days): estimation to complete an user story, fibonacci values could be points
+0 1 1 2 3 5 8 .....
+eg:
+master with dev and qa
+
+Burndown chart: remaining work in sprint, daily basis
+by master
+
+Scrum Board: jira, Kanbam,.....
+Stories	>> yet to allocate user stories
+ToDo(ready)	>> yet to sprint plan
+InProgress> planned and development in progress
+Testing		> QA
+Done		> after sprint review, retrospective meeting
+
+definition of ready>>
+user story is clear, testable, feasible, definied, 
+definition of done>>
+todo to done, peer review, review, qa test reports done
+
