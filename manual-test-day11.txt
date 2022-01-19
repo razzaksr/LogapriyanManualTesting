@@ -1,0 +1,27 @@
+day 11:
+
+Testing:
+STLC: tools
+Bug track and report
+
+SDLC Agile: Tools
+	JIRA, versionone, teamcity,...........
+
+JIRA>> SCRUM & Kanban
+	Epic>> User stories
+	Backlogs
+	Sprint plan meeting>> story points, 
+	Sprint>> backlogs
+	Sprint review
+	Sprint restrospective
+
+Installation:
+	Cloud>> free(30days/ 10 users), pro(paid)
+
+Process:
+1. Project creation
+2. User invitation
+3. Backlog
+	a. epic
+	b. user story
+		title/issue, description, story point, allocation, epic, 		impediments
